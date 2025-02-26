@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orionedtech - Your ultimate destination for online learning, internships, and career opportunities.">
+    <meta name="keywords" content="online learning, internships, career opportunities, courses, jobs">
+    <meta name="author" content="Orion">
+    <title>Orion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #141414;
+            color: #f5f5f5;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 25px;
+            background-color: #202020;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            color: #1db954;
+            margin: 0;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            position: relative;
+            left: -30px;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar ul li a:hover {
+            color: #1db954;
+        }
+
+        /* Centered Video Section */
+        .video-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .video-section video {
+            max-width: 90%;
+            border-radius: 10px;
+        }
+
+        /* Welcome Section (Centered) */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 50vh;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            color: #1db954;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+        }
+
+        /* Content Sections */
+        .content-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #202020;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        .box img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .box a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #1db954;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .box a:hover {
+            background-color: #17a34a;
+        }
+
+        /* About Us Section */
+        .about {
+            background-color: #f8f8f8;
+            padding: 40px 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .about .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .about h2 {
+            font-size: 28px;
+            color: #1db954;
+        }
+
+        .about p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #202020;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: #1db954;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="/static/images/orion_original.jpeg" alt="Orion Logo">
+            <h1>Orion</h1>
+        </div>
+        <ul>
+            <li><a href="#internships">Internships</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#jobs">Jobs</a></li>
+            <li><a href="#placements">Placements</a></li>
+        </ul>
+    </header>
+
+    <!-- Centered Video Section -->
+    <section class="video-section">
+        <video autoplay loop muted playsinline>
+            <source src="/static/images/front.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="hero">
+        <h2>Welcome to Orion</h2>
+        <p>Your ultimate destination for online learning, internships, and career opportunities. Start exploring today!</p>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships" class="content-section">
+        <div class="box">
+            <img src="/static/images/intern.jpeg" alt="Internship Opportunities">
+            <a href="internshipsdummy.html">Discover Internships</a>
+        </div>
+    </section>
+
+    <!-- Placements Section -->
+    <section id="placements" class="content-section">
+        <div class="box">
+            <img src="/static/images/placement.jpeg" alt="Placements">
+            <a href="placementdummy.html">Explore Placements</a>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="content-section">
+        <div class="box">
+            <img src="/static/images/course.jpeg" alt="Courses">
+            <a href="course dummy.html">Browse Courses</a>
+        </div>
+    </section>
+
+    <!-- Workshops Section -->
+    <section id="workshops" class="content-section">
+        <div class="box">
+            <img src="/static/images/workshop.jpeg" alt="Workshops">
+            <a href="workshopdummy.html">Explore Workshops</a>
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section id="jobs" class="content-section">
+        <div class="box">
+            <img src="/static/images/job.jpeg" alt="Jobs">
+            <a href="jobsdummy.html">Explore Jobs</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Orionedtech is committed to providing quality education and career opportunities through internships, courses, and job placements. Join us and take your career to the next level!</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Orionedtech. All rights reserved. 
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
